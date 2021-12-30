@@ -7,10 +7,10 @@
         --white: #fff;
         --gray_light: #f7f7f7;
         --green: #4caf50a1;
-        --green_sub: rgb(22 160 133);
-        --yellow: #2874f0;
-        --blue: #2874f0;
-        --blue_dark: #4e54c8;
+        --green_sub: #0FA549;
+        --yellow: #0FA549;
+        --blue: #0FA549;
+        --blue_dark: #0FA549;
         --section_bg: #f6f9fc;
         --black_light_one: #7d879c;
       }
@@ -21,7 +21,52 @@
       body{
         overflow-x: hidden;
       }
+/* SEARCH MOBILE START  */
+.search_top {
+  background: var(--blue);
+  color: white;
+  border: 0;
+  padding: 9px;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: gray;
+  border-left: 0;
+  transform: translateX(-36px);
+}
 
+input.input_box[type="text"] {
+  width: 100%;
+  border-radius: 20px;
+border: 1px solid;
+  border-color: gray;
+  padding-left: 19px;
+}
+
+button.search_icon_new {
+  background: var(--blue);
+  color: white;
+  border: 0;
+  padding: 9px;
+  border: 1px solid;
+  border-radius: 20px;
+  border-color: gray;
+  margin-top: 5px;
+  transition: .9s;
+  position: absolute;
+  right: 75px;
+
+}
+ .sub_search {
+  position: absolute;
+  top: 60px;
+  z-index: 999;
+  left: 19px;
+  width: 100%;
+opacity: 0;
+  transition: .9s;
+}
+
+/* SEARCH MOBILE END  */
 /*======================== COMMON CSS START ===========*/
 .padding , .padding_top {
   padding: 3rem 0;
@@ -219,6 +264,18 @@ li.nav-item {
 /* HEADER END  */
 
 /*================================= INDEX START ==========  */
+.category_img img {
+  min-height: 132px;
+  max-height: 132px;
+  padding: 1rem 1rem 0.1rem 1rem;
+  object-fit: fill;
+  object-position: top;
+}
+section#facilities .content-block {
+ 
+  width: 82%;
+
+}
 .our_brand-2.pt-3.slick-initialized.slick-slider {
   overflow: hidden;
   height: 7rem;
@@ -514,6 +571,17 @@ section#product_tab form {
   padding: 0.4rem;
   text-align: center;
 }
+/*=============================================== ABOUT PAGE START  */
+section#about .section-title{
+  margin-top: 20px;
+}
+section#about .section-title p {
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 26px;
+}
+/*=============================================== ABOUT PAGE END  */
 /*=============================================== PRODUCT DETAIL PAGE END  */
 .register_button {
   width: 40px;

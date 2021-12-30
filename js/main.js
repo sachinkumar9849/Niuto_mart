@@ -1,3 +1,14 @@
+$(document).ready(function() {
+  $('.search_icon_new').click(function() {
+    console.log('clicked');
+    $('.sub_search').css("opacity", "1");
+    $('.search_icon_new').hide();
+  });
+
+
+
+});
+
 $(document).ready(function () {
   $(".js-range-slider").ionRangeSlider({
     skin: "round",
@@ -476,3 +487,14 @@ $("#range-slider").slider({
 });
 
 // Bootstrap Range Slider Js Ends
+// $('.header').on('click', '.search-toggle', function(e) {
+//   var selector = $(this).data('selector');
+
+//   $(selector).toggleClass('show').find('.search-input').focus();
+//   $(this).toggleClass('active');
+
+//   e.preventDefault();
+// });
+
+
+
